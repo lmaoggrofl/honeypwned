@@ -1,6 +1,8 @@
 <!-- ABOUT THE PROJECT -->
 ## Honeypwned
 
+![image](https://github.com/lmaoggrofl/honeypwned/assets/110363544/dc282326-c95b-4c82-a59d-2411afb251a9)
+
 Honeypwned is designed to counter the vulnerabilities and misuse of Virtual Private Networks (VPNs). 
 As VPNs have gained popularity for enhancing online security and privacy, they've also been utilized by malicious actors to conceal their identities. 
 Positioned strategically within the DMZ, Honeypwned operates as a honeypot, luring in these threat actors with enticing files. 
