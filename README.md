@@ -2,7 +2,7 @@
 ## Honeypwned
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/lmaoggrofl/honeypwned/assets/110363544/83c449b1-f5a8-4bba-b06d-00d1e235b076">
+  <img width="480" height="300" src="https://github.com/lmaoggrofl/honeypwned/assets/110363544/83c449b1-f5a8-4bba-b06d-00d1e235b076">
 </p>
 
 Honeypwned is designed to counter the vulnerabilities and misuse of Virtual Private Networks (VPNs). 
