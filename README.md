@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-## About Honeypwned
+## Honeypwned
 
 Honeypwned is designed to counter the vulnerabilities and misuse of Virtual Private Networks (VPNs). 
 As VPNs have gained popularity for enhancing online security and privacy, they've also been utilized by malicious actors to conceal their identities. 
@@ -17,8 +17,6 @@ Download a local copy up and follow these steps below.
 * Linux OS
 
 ### Usage and Setting up
-
-_Below is how you can start honeypwned._
 
 1. Download the repo as a zip
 2. Extract the files
