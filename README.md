@@ -28,6 +28,5 @@ _Below is how you can start honeypwned._
 4. Save the config file
 5. Run the honeypot(make sure to run as root)
    ```python
-   sudo python3 honeypwned.py
-   ```
+   sudo python3 honeypwned.py```
 6. Listen to any traffic interacting with ports that you set open
