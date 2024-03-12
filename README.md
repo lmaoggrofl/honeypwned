@@ -24,9 +24,9 @@ Download a local copy up and follow these steps below.
 
 1. Download the repo as a zip
 2. Extract the files
-3. Open config.ini to change the ports you want to open for the honeypot(make sure port 80 and 8888 are open)
+3. Open config.ini to change the ports you want to open for the honeypot (make sure port 80 and 8888 are open)
 4. Save the config file
-5. Run the honeypot(make sure to run as root)
+5. Run the honeypot (make sure to run as priv user)
    ```python
    sudo python3 honeypwned.py
    ```
