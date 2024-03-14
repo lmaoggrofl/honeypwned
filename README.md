@@ -28,7 +28,7 @@ Download a local copy up and follow these steps below.
    ```python
    pyinstaller --onefile --name PDFViewer PDFViewerPayload.py
    ```
-4. Zip the payload and place it in static/tools
+4. Zip the payload and replace the current zip in static/tools/
 5. Open config.ini to change the ports you want to open for the honeypot (make sure port 80 and 8888 are open)
 6. Save the config file
 7. Run the honeypot (make sure to run as privd user)
@@ -36,4 +36,4 @@ Download a local copy up and follow these steps below.
    sudo python3 honeypwned.py
    ```
 8. Listen to any traffic interacting with ports that you set open
-9. If someone with a VPN downloads and runs the payload, you will see their true IP
+9. If someone with a VPN downloads and run the payload, you will see their true IP
