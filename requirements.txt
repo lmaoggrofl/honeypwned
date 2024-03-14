@@ -1,0 +1,6 @@
+configparser
+Flask
+PyPDF2
+requests
+netifaces
+python3-tk
