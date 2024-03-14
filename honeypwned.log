@@ -1,7 +1,28 @@
-2024-03-11 23:00:1710169217 WARNING   * Running on all addresses.
+2024-03-14 14:34:1710398057 WARNING   * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-2024-03-11 23:00:1710169217 INFO      * Running on http://192.168.137.143:80/ (Press CTRL+C to quit)
-2024-03-11 23:00:1710169253 INFO     192.168.137.136 - - [11/Mar/2024 23:00:53] "GET /download HTTP/1.1" 200 -
-2024-03-11 23:00:1710169254 INFO     192.168.137.136 - - [11/Mar/2024 23:00:54] "GET /download/pdfdecryptor.zip HTTP/1.1" 200 -
-2024-03-11 23:02:1710169358 INFO     Connection Received on port: 8888 from 192.168.137.136:40492 
-2024-03-11 23:02:1710169358 INFO     Data received:8888 from 192.168.137.136:40492 - b'My Real IP: 124.197.94.186\n'
+2024-03-14 14:34:1710398057 INFO      * Running on http://192.168.137.143:80/ (Press CTRL+C to quit)
+2024-03-14 14:34:1710398063 INFO     127.0.0.1 - - [14/Mar/2024 14:34:23] "GET /download HTTP/1.1" 200 -
+2024-03-14 14:34:1710398063 INFO     127.0.0.1 - - [14/Mar/2024 14:34:23] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398063 INFO     127.0.0.1 - - [14/Mar/2024 14:34:23] "[36mGET /static/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398063 INFO     127.0.0.1 - - [14/Mar/2024 14:34:23] "[36mGET /static/font/font.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398063 INFO     127.0.0.1 - - [14/Mar/2024 14:34:23] "[36mGET /static/css/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398063 INFO     127.0.0.1 - - [14/Mar/2024 14:34:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398064 INFO     127.0.0.1 - - [14/Mar/2024 14:34:24] "GET /document HTTP/1.1" 200 -
+2024-03-14 14:34:1710398064 INFO     127.0.0.1 - - [14/Mar/2024 14:34:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398064 INFO     127.0.0.1 - - [14/Mar/2024 14:34:24] "[36mGET /static/css/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398064 INFO     127.0.0.1 - - [14/Mar/2024 14:34:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398064 INFO     127.0.0.1 - - [14/Mar/2024 14:34:24] "[36mGET /static/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398064 INFO     127.0.0.1 - - [14/Mar/2024 14:34:24] "[36mGET /static/font/font.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398067 INFO     127.0.0.1 - - [14/Mar/2024 14:34:27] "GET /static/document/User%20Guide%20%28PDF%20Viewer%20Tool%29.pdf HTTP/1.1" 200 -
+2024-03-14 14:34:1710398083 INFO     127.0.0.1 - - [14/Mar/2024 14:34:43] "GET /download HTTP/1.1" 200 -
+2024-03-14 14:34:1710398083 INFO     127.0.0.1 - - [14/Mar/2024 14:34:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398083 INFO     127.0.0.1 - - [14/Mar/2024 14:34:43] "[36mGET /static/css/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398083 INFO     127.0.0.1 - - [14/Mar/2024 14:34:43] "[36mGET /static/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398083 INFO     127.0.0.1 - - [14/Mar/2024 14:34:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398083 INFO     127.0.0.1 - - [14/Mar/2024 14:34:43] "[36mGET /static/font/font.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398085 INFO     127.0.0.1 - - [14/Mar/2024 14:34:45] "GET /document HTTP/1.1" 200 -
+2024-03-14 14:34:1710398085 INFO     127.0.0.1 - - [14/Mar/2024 14:34:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398085 INFO     127.0.0.1 - - [14/Mar/2024 14:34:45] "[36mGET /static/css/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398085 INFO     127.0.0.1 - - [14/Mar/2024 14:34:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398085 INFO     127.0.0.1 - - [14/Mar/2024 14:34:45] "[36mGET /static/font/font.css HTTP/1.1[0m" 304 -
+2024-03-14 14:34:1710398085 INFO     127.0.0.1 - - [14/Mar/2024 14:34:45] "[36mGET /static/css/ionicons.min.css HTTP/1.1[0m" 304 -

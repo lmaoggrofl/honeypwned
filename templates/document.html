@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Documents</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/ionicons.min.css">
+        <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="static/css/style.css"> 
+
+        <!-- font -->
+        <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet'>
+        <link rel="stylesheet" href="static/font/font.css">
+    </head>
+</head>
+<body>
+    <div id="wrapper">
+        <section class="section-1">
+            <div class="container">
+                <header class="site-header">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-8">
+                            <h1 class="logo"><a href="/">Intranet</a></h1>
+                        </div>
+                        <div class="col-sm-8 col-xs-4">
+                            <nav class="navbar pull-right" role="navigation">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="ion-navicon"></span>
+                                </button>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="/download">Tools</a></li>
+                                        <li><a href="/document">Documents</a></li>
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </nav>
+                        </div>
+                    </div>  <!-- row -->
+                </header>   <!-- site header -->
+
+                <h1 class="promo-text">Download Documents</h1>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="container">
+                <h1>Documents</h1>
+                <ul>
+                    {% for file in files %}
+                    <li><a href="{{ url_for('static', filename='document/' + file) }}">{{ file }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>  <!-- section-2 -->
+        <footer class="site-footer">
+            <div class="copyright">
+                &copy; 2024 Honeypwned
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

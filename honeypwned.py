@@ -49,15 +49,16 @@ def start_flask_server():
     app = Flask(__name__)
 
     @app.route('/')
-    def hello():
-        return "Hello, World!"
+    def index():
+        return render_template('index.html')
 
     # Define route for the download page
     @app.route('/download')
     def download_page():
-        # Get the list of files
-        files = get_files()
-
+        # Define the directory path
+        directory = os.path.join(app.root_path, 'static', 'tools')
+        # Get the list of files in the directory
+        files = os.listdir(directory)
         # Render the download page template and pass the list of files
         return render_template('download.html', files=files)
 
@@ -65,8 +66,25 @@ def start_flask_server():
     @app.route('/download/<path:filename>')
     def download_file(filename):
         # Specify the directory where your files are stored
-        directory = 'static'
-        
+        directory = os.path.join('static', 'tools')
+        # Return the requested file for download
+        return send_from_directory(directory, filename, as_attachment=True)
+
+    # Define route for the documents page
+    @app.route('/document')
+    def document_page():
+        # Define the directory path
+        directory = os.path.join(app.root_path, 'static', 'document')
+        # Get the list of files in the directory
+        files = os.listdir(directory)
+        # Render the download page template and pass the list of files
+        return render_template('document.html', files=files)
+    
+        # Route to serve files for download
+    @app.route('/document/<path:filename>')
+    def download_document(filename):
+        # Specify the directory where your files are stored
+        directory = os.path.join('static', 'document')
         # Return the requested file for download
         return send_from_directory(directory, filename, as_attachment=True)
 
