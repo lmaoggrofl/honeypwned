@@ -19,7 +19,7 @@ Download a local copy up and follow these steps below.
 ### Prerequisites
 
 * Linux OS
-* Python Libraries (pyinstaller, Flask)
+* Python Libraries (pyinstaller, Flask, tk, PyPDF2, requests, netifaces)
 
 ### Usage and Setting up
 
