@@ -19,6 +19,7 @@ Download a local copy up and follow these steps below.
 ### Prerequisites
 
 * Linux OS
+* Python Libraries (pyinstaller, Flask)
 
 ### Usage and Setting up
 
