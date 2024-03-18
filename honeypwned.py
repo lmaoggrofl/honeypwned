@@ -5,60 +5,19 @@ import sys
 from socket import socket, timeout
 from flask import Flask, render_template, send_from_directory
 import os
-from ipwhois import IPWhois
-from ipaddress import ip_address, ip_network
 
 def handle_client(client_socket, port, ip, remote_port):
-    is_vpn = check_vpn(ip)
-    if is_vpn:
-        vpnstring = "[VPN]"
-    else:
-        vpnstring = ""
-    logger.info("Connection Received on port: %s from %s:%d %s" % (port, ip, remote_port, vpnstring))
+    logger.info("Connection Received on port: %s from %s:%d " % (port, ip, remote_port))
     client_socket.settimeout(4)
     try:
         data = client_socket.recv(64)
-        logger.info("Data received: %s from %s:%d - %s %s" % (port, ip, remote_port, data, vpnstring))
+        logger.info("Data received: %s from %s:%d - %s" % (port, ip, remote_port, data))
         client_socket.send("Access Denied.\n".encode('utf8'))
-
-        is_vpn = check_vpn(ip)
-        if is_vpn:
-            vpnstring = "[VPN]"
-        else:
-            vpnstring = ""
     except timeout:
         pass
     except ConnectionResetError as e:
         logger.error("Connection Reset Error occurred")
     client_socket.close()
-
-def check_vpn(ip):
-    private_ip_ranges = [
-        ip_network('10.0.0.0/8'),           # Class A private network
-        ip_network('172.16.0.0/12'),        # Class B private network
-        ip_network('192.168.0.0/16'),       # Class C private network
-    ]
-    
-    # Loopback address
-    loopback_address = '127.0.0.1'
-
-    # Check if the IP is in the private IP ranges or loopback address
-    if ip == loopback_address:
-        return False  # Skip VPN check for loopback address
-    
-    for private_range in private_ip_ranges:
-        if ip_address(ip) in private_range:
-            return False  # Skip VPN check for private IP addresses
-
-    try:
-        obj = IPWhois(ip)
-        result = obj.lookup_whois()
-        # Check if the IP is associated with a VPN service
-        if 'vp' in result['nets'][0]['description'].lower():
-            return True
-    except Exception as e:
-        logger.error(f"Error checking VPN for IP {ip}: {str(e)}")
-    return False
 
 def start_new_listener_thread(port):
     listener = socket()
